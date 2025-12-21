@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setu Kendra | Online Government Services</title>
+  <!-- Modern Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="logo">
+      <i class="fas fa-landmark"></i> Setu<span>Kendra</span>
+    </div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#apply" class="btn-apply">Apply Now</a>
+    </nav>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Easy Access to <br><span>Government Services</span></h1>
+      <p>Get Income, Caste, Domicile Certificates and more from the comfort of your home. Fast, Secure, and Reliable.
+      </p>
+      <a href="#apply" class="cta-button">Start Application <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="hero-image">
+      <!-- Using a placeholder/icon representation for visual appeal without external images -->
+      <div class="hero-icon-container">
+        <i class="fas fa-file-signature"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>We provide a wide range of government document services.</p>
+    </div>
+
+    <div class="services-container">
+      <div class="service-card">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h3>Income Certificate</h3>
+        <p>Apply for official income proof for scholarships and schemes.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-users"></i>
+        <h3>Caste Certificate</h3>
+        <p>Get your caste validation documents processed quickly.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-home"></i>
+        <h3>Domicile Certificate</h3>
+        <p>Proof of residence for state benefits and admissions.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-id-card"></i>
+        <h3>Pan Card Services</h3>
+        <p>New Pan Card application and corrections made easy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form Section -->
+  <section id="apply" class="form-section">
+    <div class="form-container">
+      <div class="form-header">
+        <h2>Application Form</h2>
+        <p>Fill out the details below to submit your request.</p>
+      </div>
+
+      <form id="setuForm">
+        <div class="input-group">
+          <label>Full Name <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label>Mobile Number <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="fas fa-phone-alt"></i>
+              <input type="tel" id="mobile" placeholder="10-digit mobile number" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Aadhaar Number <span class="required">*</span></label>
+            <div class="input-wrapper">
+              <i class="fas fa-fingerprint"></i>
+              <input type="text" id="aadhaar" placeholder="12-digit Aadhaar number" maxlength="12" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <div class="input-wrapper">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="example@email.com">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Select Service <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <i class="fas fa-list-ul"></i>
+            <select id="service" required>
+              <option value="">-- Choose Service --</option>
+              <option>Income Certificate</option>
+              <option>Caste Certificate</option>
+              <option>Domicile / Residence Certificate</option>
+              <option>Birth Certificate</option>
+              <option>Non-Creamy Layer</option>
+              <option>Pan Card</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Address <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <textarea id="address" rows="3" placeholder="Enter your full address" required
+              style="padding-left: 15px;"></textarea>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Upload Documents (Zip/PDF) <span class="required">*</span></label>
+          <div class="file-upload-wrapper">
+            <input type="file" id="file" class="file-input">
+            <span class="file-custom">Choose file...</span>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+      <div id="msg" class="message-box"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Setu Kendra Services. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
